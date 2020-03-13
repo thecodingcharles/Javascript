@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="utf-8">
+      <title> Arreglos</title>
+   </head>
+   <body>
+       <h1>Arreglos</h1>
+
+    <script> 
+
+        var amigos = ["Amigo 1", "Amigo 2", true, false, 3, 9];
+
+        var i;
+        var text = "";
+        for (i = 0; i < amigos.length; i++) { 
+             text += amigos[i] + "<br>";
+        }
+
+        document.write(text);
+
+        amigos.forEach(element => {
+            console.log(element);
+        });
+
+        console.log(amigos.reverse());
+        console.log(amigos.join("~"));
+
+    </script>
+   </body>
+</html>
